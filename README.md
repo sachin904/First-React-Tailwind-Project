@@ -19,18 +19,4 @@ This project implements a **multi-step authentication system** using **React, Ta
 
 ---
 
-## 📂 Folder Structure  
-authentication-flow/
-│── public/                     # Static files
-│── src/                        # Source code
-│   ├── components/             # Reusable UI components
-│   │   ├── Age.jsx             # Age verification component
-│   │   ├── Start.jsx           # Email verification component
-│   │   ├── Otp.jsx             # OTP verification component
-│   │   ├── Button.jsx          # Custom button component
-│   │   ├── InputBox.jsx        # Custom input field component
-│   │   ├── Header.jsx          # Header component
-│   ├── App.js                  # Main application file
-│   ├── index.js                # Entry point
-│── package.json                # Project dependencies
-│── README.md                   # Documentation
+
