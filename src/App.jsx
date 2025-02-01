@@ -22,7 +22,9 @@ function App() {
               <Route path='/project/Email-verification'element={<Start/>}></Route>
               <Route path='/project/otp-verification' element={<Otp/>}></Route>
               <Route path="*" element={<ErrorPage/>}></Route>
+             
            </Route>
+           <Route path="/" element={<RedirectToProject />} />
        </Routes>
     </BrowserRouter>
   </div>
@@ -43,5 +45,8 @@ function Layout(){
           </div>
     </div>
 }
-
+import { Navigate } from 'react-router-dom';
+function RedirectToProject() {
+  return <Navigate to="/project" />;
+}
 export default App
