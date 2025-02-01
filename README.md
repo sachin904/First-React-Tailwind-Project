@@ -1,8 +1,36 @@
-# React + Vite
+# 🛡️ Authentication Flow (Age, Email, OTP Verification) 🔐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements a **multi-step authentication system** using **React, Tailwind CSS, and React Router**. Users must verify their **date of birth, email, and OTP** before proceeding.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Age Verification** (Users must enter their date of birth)
+- **Email Verification** (Users enter their email to proceed)
+- **OTP Verification** (Users input a 5-digit OTP)
+- **Navigation Between Steps** using `react-router-dom`
+- **Dynamic Button Disabling** (Buttons remain disabled until valid input is provided)
+- **Tailwind CSS for Styling** (Modern & Responsive UI)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🛠️ Tech Stack  
+- **Frontend:** React, Tailwind CSS  
+- **Routing:** React Router  
+- **State Management:** useState, useRef  
+
+---
+
+## 📂 Folder Structure  
+authentication-flow/
+│── public/                     # Static files
+│── src/                        # Source code
+│   ├── components/             # Reusable UI components
+│   │   ├── Age.jsx             # Age verification component
+│   │   ├── Start.jsx           # Email verification component
+│   │   ├── Otp.jsx             # OTP verification component
+│   │   ├── Button.jsx          # Custom button component
+│   │   ├── InputBox.jsx        # Custom input field component
+│   │   ├── Header.jsx          # Header component
+│   ├── App.js                  # Main application file
+│   ├── index.js                # Entry point
+│── package.json                # Project dependencies
+│── README.md                   # Documentation
